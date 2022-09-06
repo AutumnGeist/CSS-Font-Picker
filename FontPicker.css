@@ -1,0 +1,190 @@
+
+body {
+    background-color: whitesmoke;
+}
+/*Main heading at top of page*/
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    background-color: lightskyblue;
+}
+/*main heading text*/
+#heading {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px royalblue;                            
+}
+/*right & left column headings*/
+.heading2 {
+    text-align: center;
+    padding: 10px;
+}
+label {
+    margin-left: 5%;
+    font-size: 18px;
+}
+/*form headings for font customization*/
+.customHeading {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18px;
+}
+h4 {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0;
+    padding-top: 2%;
+}
+#h1 {
+    text-align: left;
+}
+#p {
+    width: 85%;
+}
+#custHeader {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/*customize form field buttons*/
+.custButton {
+    width: 70%;
+    padding: 3%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+/*give padding to buttons and text box*/
+#font, #fontButton, #resetFontButton {
+    padding: 1%;
+}
+/*make all buttons have bold text*/
+input[type=button], input[type=reset] {
+    font-weight: bold;
+   
+}
+#size {
+    text-align: right;
+    padding: 3%;
+    width: 70%;
+    margin-left: 15%;
+}
+/*select form fields*/
+select {
+    width: 80%;
+    margin-left: 15%; 
+    padding: 3%;             
+}
+/*font test area*/
+#preview {
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding-left: 5%;
+    background-color: white;
+    width: 90%;
+    margin-left: 4%;
+}
+#mainRow {
+    margin-top: 80px;
+}
+.row {
+    width: 100%;              
+}
+/*body right and left columns*/
+.column {
+    float: left;
+}
+#column1 {
+    width: 60%;
+}
+#column2 {
+    width: 40%
+}
+/*form field columns*/
+.column2 {
+    float: left;
+    width: 33%
+}
+/*Font legend*/
+#legendDiv {
+    padding-left: 20%;
+    position: relative;
+}
+.legend {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+/*collapsible font list buttons, right column of page*/
+.accordion {
+    cursor: pointer;
+    width: 60%;
+    padding: 30px;
+    margin-left: 20%;
+    text-align: center;
+    font-weight: bold;
+    background-color: aliceblue;
+    border: 1px solid gray;
+    transition: ease 0.4s;
+}
+/*add click and hover effects*/
+.accordian.activeClick, .accordion:hover {
+    background-color: azure;
+}
+/*format/stylize individual font list headings*/
+#serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+#sansSerif {
+    font-family: Franklin Gothic, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+#monospace {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+#cursive {
+    font-family: lucida handwriting, brush script mt, cursive;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+#fantasy {
+    font-family: Henny Penny, papyrus, fantasy;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+/*font ul lists*/
+.panel {
+    padding: 10px;
+    display: none;
+    text-align: center;
+}
+/*list of fonts within panels*/
+.fontList {
+    text-align: left;
+    list-style-type: none;
+    display: inline-block;
+}
+/*stylize li hover*/
+li {
+    cursor: pointer;
+}
+.standardFont:hover {
+    color: blue;
+}
+.googleFont:hover {
+    color: darkorange;
+}

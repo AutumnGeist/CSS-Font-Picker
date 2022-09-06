@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Font Picker</title>
+		<link rel="stylesheet" href="FontPicker.css" type="text/css">
+        <script type=text/javascript src="FontPicker.js" defer></script>
+        <!--Google Font Links-->
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Barrio&family=Bonbon&family=Butcherman&family=Cherry+Cream+Soda&family=Cherry+Swash&family=Cookie&family=Creepster&family=Dancing+Script&family=Dr+Sugiyama&family=Eater&family=Emilys+Candy&family=Fondamento&family=Grenze+Gotisch&family=Griffy&family=Henny+Penny&family=Irish+Grover&family=Margarine&family=Metamorphous&family=Molle&family=Mountains+of+Christmas&family=Mystery+Quest&family=New+Rocker&family=Noto+Sans+Mono&family=Nova+Mono&family=Permanent+Marker&family=Press+Start+2P&family=Princess+Sofia&family=Purple+Purse&family=Ribeye&family=Ribeye+Marrow&family=Romanesco&family=Sacramento&family=Share+Tech+Mono&family=Tangerine&family=Trade+Winds&family=Xanh+Mono&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <div id="header">
+            <h1 id="heading">CSS Font Picker</h1>
+        </div>
+        <div id="mainRow">
+            <!--left column-->
+            <div class="column" id="column1">
+                <h2 class="heading2">Font Tester</h2>
+                <form action="#">
+                    <label>Enter font name: </label>
+                    <input id="font" type="text" name="font" placeholder="Times New Roman">
+                    <input id="fontButton" type="button" onclick="changeFont()" value="Change Font">
+                    <input id="resetFontButton" type="button" onclick="resetFont()" value="Reset Font">
+                </form>
+                <br>
+                 <div id="preview">
+                    <h1 class="text headings">Test Heading 1</h1>
+                    <h2 class="text headings">Test Heading 2</h2>
+                    <h3 class="text headings">Test Heading 3</h3>
+                    <h3 class="text headings">0 1 2 3 4 5 6 7 8 9 ! @ # $ % &</h3>
+                    <p class="text" id="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum.</p>
+                </div>
+                <br>
+                <form action="#">
+                    <h3 id="custHeader">Customize the Font</h3> 
+                    <h4>Note: not all fonts allow customization</h4>
+                    <div class="row">
+                        <div class="column2">
+                            <p class="customHeading">Size (in px)</p>
+                        </div>
+                        <div class="column2">
+                            <p class="customHeading">Weight</p>
+                        </div>
+                        <div class="column2">
+                            <p class="customHeading">Style</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column2">
+                            <input type="text" id="size" name="size" placeholder="16px">
+                        </div>
+                        <div class="column2">
+                            <select id="weight">
+                                <option value="normal">Normal</option>
+                                <option value="bold">Bold</option>
+                                <option value="bolder">Bolder</option>
+                                <option value="lighter">Lighter</option>
+                            </select>
+                        </div>
+                        <div class="column2">
+                            <select id="style">
+                                <option value="normal">Normal</option>
+                                <option value="italic">Italic</option>
+                                <option value="oblique">Oblique</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column2">
+                            <input class="custButton" type="button" onclick="customizeH()" value="Customize Headings">
+                        </div>
+                        <div class="column2">
+                            <input class="custButton" type="button" onclick="customizeP()" value="Customize Text">
+                        </div>
+                        <div class="column2">
+                            <input class="custButton" id="resetButton" type="reset" value="Reset Style"> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--right column-->
+            <div class="column" id="column2">
+                <h2 class="heading2">Font Lists</h2>
+                <div id="legendDiv">
+                    <p class="legend"><strong>Color Legend: </strong>
+                    <p class="legend" style="color:blue">&nbsp;Standard Web Font&nbsp;</p>
+                    <p class="legend" style="Color:darkOrange">&nbsp;Google Web Font&nbsp;</p>
+                </div>
+                <button class="accordion"><p id="serif">Serif</p>(normal fonts with serifs)</button>
+			    <div class="panel">
+			        <ul class="fontList">
+                        <li class="standardFont">Bodoni MT</li>
+                        <li class="standardFont">Book Antiqua</li>
+                        <li class="standardFont">Calisto MT</li>
+                        <li class="standardFont">Cambria</li>
+                        <li class="googleFont">Cherry Swash</li>
+                        <li class="standardFont">Garamond</li>
+                        <li class="standardFont">Georgia</li>
+                        <li class="standardFont">Goudy Old Style</li>
+                        <li class="standardFont">Lucida Bright</li>
+                        <li class="standardFont">Perpetua</li>
+                        <li class="googleFont">Purple Purse</li>
+                        <li class="standardFont">Rockwell</li>
+                        <li class="standardFont">Times New Roman</li>
+                    </ul>
+			    </div>
+
+                <button class="accordion"><p id="sansSerif">Sans-Serif</p>(normal fonts without serifs)</button>
+			    <div class="panel">
+			        <ul class="fontList">
+                        <li class="standardFont">Arial</li>
+                        <li class="standardFont">Arial Black</li>
+                        <li class="standardFont">Arial Narrow</li>
+                        <li class="standardFont">Arial Rounded MT</li>
+                        <li class="standardFont">Calibri</li>
+                        <li class="standardFont">Candara</li>
+                        <li class="standardFont">Century Gothic</li>
+                        <li class="googleFont">Cherry Cream Soda</li>
+                        <li class="standardFont">Comic Sans MS</li>
+                        <li class="standardFont">Franklin Gothic</li>
+                        <li class="standardFont">Helvetica</li>
+                        <li class="standardFont">Impact</li>
+                        <li class="standardFont">Gill Sans MT</li>
+                        <li class="standardFont">Segoe UI</li>
+                        <li class="standardFont">Tahoma</li>
+                        <li class="standardFont">Trebuchet MS</li>
+                        <li class="standardFont">Verdana</li>
+                    </ul>
+			    </div>
+
+                <button class="accordion"><p id="monospace">Monospace</p>(fixed width fonts)</button>
+			    <div class="panel">
+			        <ul class="fontList">
+                        <li class="standardFont">Consolas</li>
+                        <li class="standardFont">Courier</li>
+                        <li class="standardFont">Lucida Console</li>
+                        <li class="standardFont">Lucida Sans Typewriter</li>
+                        <li class="standardFont">Monospace</li>
+                        <li class="googleFont">Noto Sans Mono</li>
+                        <li class="googleFont">Nova Mono</li>
+                        <li class="googleFont">Share Tech Mono</li>
+                        <li class="googleFont">Xanh Mono</li>
+                    </ul>
+			    </div>
+
+                <button class="accordion"><p id="cursive">Cursive</p>(fonts that emulate handwriting)</button>
+			    <div class="panel">
+			        <ul class="fontList">
+                        <li class="googleFont">Bonbon</li>
+                        <li class="standardFont">Brush Script MT</li>
+                        <li class="googleFont">Cookie</li>
+                        <li class="googleFont">Dancing Script</li>
+                        <li class="googleFont">Dr Sugiyama</li>
+                        <li class="googleFont">Emilys Candy</li>
+                        <li class="standardFont">Lucida Handwriting</li>
+                        <li class="googleFont">Princess Sofia</li>
+                        <li class="googleFont">Sacramento</li>
+                        <li class="googleFont">Tangerine</li>
+                    </ul>
+			    </div>
+
+                <button class="accordion"><p id="fantasy">Fantasy</p>(decorative fonts)</button>
+			    <div class="panel">
+			        <ul class="fontList">
+                        <li class="googleFont">Audiowide</li>
+                        <li class="googleFont">Barrio</li>
+                        <li class="googleFont">Creepster</li>
+                        <li class="googleFont">Eater</li>
+                        <li class="googleFont">Grenze Gotisch</li>
+                        <li class="googleFont">Griffy</li>
+                        <li class="googleFont">Henny Penny</li>
+                        <li class="googleFont">Irish Grover</li>
+                        <li class="googleFont">Margarine</li>
+                        <li class="googleFont">Metamorphous</li>
+                        <li class="googleFont">Mystery Quest</li>
+                        <li class="googleFont">Mountains of Christmas</li>
+                        <li class="googleFont">New Rocker</li>
+                        <li class="standardFont">Papyrus</li>
+                        <li class="googleFont">Permanent Marker</li>
+                        <li class="googleFont">'Press Start 2P'</li>
+                        <li class="googleFont">Ribeye</li>
+                        <li class="googleFont">Ribeye Marrow</li>
+
+                    </ul>
+			    </div>
+            </div>
+        </div>
+    </body>
+</html>
