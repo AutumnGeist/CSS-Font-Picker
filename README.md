@@ -16,7 +16,7 @@ Accordion
 [Web-safe Fonts](https://blog.hubspot.com/website/web-safe-html-css-fonts) \
 [Google Fonts](https://fonts.google.com/)
 
-## Font Lists
+## Included Fonts
 ### Serif: normal fonts with serifs
 - Bodoni MT
 - Book Antiqua
