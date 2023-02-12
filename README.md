@@ -1,5 +1,7 @@
 # CSS-Font-Picker
-A JavaScript web tool intended to help pick web-safe fonts for designing. Includes a list of various standard and Google web fonts categorized by font families. Use the preview pane to interactively change and customize the font and CSS such as size, style, and weight. The preview pane includes various heading sizes, numbers/symbols, and basic paragraph text to show how all characters will display in the selected font.
+A JavaScript web tool intended to help pick web-safe fonts for designing. Includes a list of various standard and Google web fonts categorized by font families. 
+
+Use the preview pane to interactively change and customize the font and CSS such as size, style, and weight. The preview pane includes various heading sizes, numbers/symbols, and basic paragraph text to show how all characters will display in the selected font.
 
 ### Functionalities
 Dynamic Interface \
